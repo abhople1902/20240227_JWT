@@ -6,7 +6,7 @@ const { JWT_SECRET } = require('./config');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const MONGODB_URI = 'mongodb+srv://Ayush:2BXNWx4qaZkr3C5y@cluster0.ijs1ymf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const MONGODB_URI = 'mongodb+srv://Ayush:2BXNWx4qaZkr3C5y@cluster0.ijs1ymf.mongodb.net/jwt?retryWrites=true&w=majority&appName=Cluster0';
 
 app.use(express.json());
 app.use('/auth', authRoutes);
